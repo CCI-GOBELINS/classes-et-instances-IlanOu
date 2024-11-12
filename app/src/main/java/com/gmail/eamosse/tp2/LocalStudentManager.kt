@@ -6,8 +6,7 @@ class LocalStudentManager : StudentManager {
     // TODO 2: init the class with a list of 10 students every time a new instance is created;
     // Use the followi
 
-    /**
-     * listOf(
+    /*listOf(
     Etudiant(name = "John1", code = "A1", sexe = "M", address = "Lilles", age = 20),
     Etudiant(name = "John2", code = "A2", sexe = "F", address = "Lilles", age = 30),
     Etudiant(name = "John3", code = "A3", sexe = "F", address = "Lilles", age = 41),
@@ -18,6 +17,36 @@ class LocalStudentManager : StudentManager {
     Etudiant(name = "John8", code = "A8", sexe = "M", address = "Lilles", age = 16),
     Etudiant(name = "John9", code = "A9", sexe = "F", address = "Lilles", age = 10),
     Etudiant(name = "John10", code = "A10", sexe = "F", address = "Lilles", age = 56),
-    )
-     */
+    )*/
+    override fun listOf10(): List<Student> {
+        TODO("Not yet implemented")
+    }
+
+    override fun sortAgeAscDesc(type: String): List<Student> {
+        TODO("Not yet implemented")
+    }
+
+    override fun groupBySex(): Map<String, List<Student>> {
+        TODO("Not yet implemented")
+    }
+
+    override fun boysOrGirls(sexe: String): List<Student> {
+        TODO("Not yet implemented")
+    }
+
+    override fun onlyNames(): List<String> {
+        TODO("Not yet implemented")
+    }
+
+    override fun deleteBySex(sex: String) {
+        TODO("Not yet implemented")
+    }
+
+    override fun reverse(): List<Student> {
+        TODO("Not yet implemented")
+    }
+
+    override fun clear() {
+        TODO("Not yet implemented")
+    }
 }
