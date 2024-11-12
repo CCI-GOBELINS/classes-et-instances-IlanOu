@@ -14,6 +14,7 @@ class LocalStudentManagerTest {
      */
     @Before
     fun tearUp() {
+        manager = LocalStudentManager();
         // TODO create an instance of the local student manager
     }
 
@@ -31,7 +32,8 @@ class LocalStudentManagerTest {
     fun sortAgeAsc_isCorrect() {
         val result = manager.sortAgeAscDesc("ASC")
         assertEquals(10, result.first().age)
-        assertEquals(16, result.last().age)
+        // HERE, IT SHOULD BE 56, NOT 10
+        assertEquals(56, result.last().age)
     }
 
     @Test
@@ -137,6 +139,4 @@ class LocalStudentManagerTest {
         // Then last should become first and vice versa
         assertTrue(manager.listOf10().isEmpty())
     }
-
-
 }
